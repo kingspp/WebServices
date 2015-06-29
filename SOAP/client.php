@@ -6,7 +6,7 @@
 <?php
 if(isset($_POST['btn'])){	
 require_once "lib/nusoap.php";
-$client = new nusoap_client("http://localhost/nusoap/convService.php");
+$client = new nusoap_client("http://localhost/nusoap/server.php");
  
 $error = $client->getError();
 if ($error) {
